@@ -54,8 +54,6 @@ def countdown_timer(sec):#input is seconds https://medium.com/@sarahisdevs/how-t
 def game(pwd):#https://www.geeksforgeeks.org/multithreading-python-set-1/
     print('Welcome to the number guessing game with a twist!\nI will generate a random password that you have to guess.\nGuess the right password before the time limit or the bomb will explode!')
     print('Here is a hint!....Its a three digit number combo')
-    print(pwd)#for testing purposes(remove after)
-    # self.expired = False
     global timerDone
     timethread = threading.Thread(target=countdown_timer,args=(5,))
     timethread.start()
